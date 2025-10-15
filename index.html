@@ -37,6 +37,52 @@
       padding: 1rem;
       margin-top: 30px;
     }
+    .project-image {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #0066cc, #00bfff);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #004b99, #0099cc);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 102, 204, 0.5);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn.disabled {
+  background: #ccc;
+  pointer-events: none;
+  box-shadow: none;
+}
+
   </style>
 </head>
 <body>
@@ -144,6 +190,27 @@
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jackson-karanja-6655b5303" target="_blank">https://www.linkedin.com/in/jackson-karanja-6655b5303</a></p>
     </div>
   </section>
+  <div class="project-card">
+  <h3>Number System Converter App</h3>
+  <p>
+    A Java-based Android application that converts numbers between
+    <strong>Decimal, Binary, Octal, and Hexadecimal</strong> systems.
+    The app performs real-time conversions and features a clean, user-friendly interface.
+  </p>
+  <ul>
+    <li>✔ Built using Java and Android Studio</li>
+    <li>✔ Supports four number systems</li>
+    <li>✔ Simple and intuitive UI</li>
+  </ul>
+
+  <!-- Screenshot Preview -->
+  <div class="project-image">
+    <img src="number-converter.jpg" alt="Number System Converter App Screenshot">
+  </div>
+
+  <a href="number-converter.apk" download class="btn">Download App</a>
+</div>
+
 
   <!-- Footer -->
   <footer>
